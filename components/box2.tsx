@@ -53,11 +53,11 @@ const Box2: VFC = () => {
 						borderRadius: 12,
 						backgroundColor: "skyblue",
 						marginBottom: 12,
-						transform: [{ translateX: transition.x, translateY: transition.y }],
+						transform: [{ translateX: transition.x }, { translateY: transition.y }],
 					}}
 				/>
 				<TouchableOpacity onPress={handleAnimate}>
-					<Text>animate</Text>
+					<Text>animate parallel</Text>
 				</TouchableOpacity>
 				<TouchableOpacity onPress={handleAnimateSequence}>
 					<Text>animate sequence</Text>
