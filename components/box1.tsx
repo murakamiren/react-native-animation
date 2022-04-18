@@ -1,5 +1,5 @@
 import { useRef, VFC } from "react";
-import { Animated, Text, TouchableOpacity, View } from "react-native";
+import { Animated, Easing, Text, TouchableOpacity, View } from "react-native";
 
 const Box1: VFC = () => {
 	const transition = useRef(new Animated.Value(0)).current;
@@ -10,6 +10,7 @@ const Box1: VFC = () => {
 			toValue: transitionValue,
 			duration: 1000,
 			useNativeDriver: true,
+			easing: Easing.bounce,
 		}).start();
 	};
 
