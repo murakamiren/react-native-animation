@@ -1,10 +1,18 @@
+import { StatusBar } from "expo-status-bar";
 import { VFC } from "react";
-import { Text, View } from "react-native";
+import { SafeAreaView, Text, View } from "react-native";
+import Box1 from "./box1";
 
 const Index: VFC = () => {
 	return (
 		<View style={{ flex: 1 }}>
-			<Text>hello world</Text>
+			<SafeAreaView style={{ flex: 1 }}>
+				<View style={{ flexDirection: "row", justifyContent: "center", marginBottom: 16 }}>
+					<Text style={{ fontSize: 32, fontWeight: "600" }}>hello world</Text>
+				</View>
+				<Box1 />
+			</SafeAreaView>
+			<StatusBar style="auto" />
 		</View>
 	);
 };
