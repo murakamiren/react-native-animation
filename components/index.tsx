@@ -8,7 +8,7 @@ const Index: VFC = () => {
 		<View style={{ flex: 1 }}>
 			<SafeAreaView style={{ flex: 1 }}>
 				<View style={{ flexDirection: "row", justifyContent: "center", marginBottom: 16 }}>
-					<Text style={{ fontSize: 32, fontWeight: "600" }}>hello world</Text>
+					<Text style={{ fontSize: 32, fontWeight: "600" }}>アニメーション練習</Text>
 				</View>
 				<Box1 />
 			</SafeAreaView>
