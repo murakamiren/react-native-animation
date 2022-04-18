@@ -6,8 +6,10 @@ const Box3: VFC = () => {
 	const secondOpacity = useRef(new Animated.Value(0)).current;
 	const thirdOpacity = useRef(new Animated.Value(0)).current;
 
+	const staggerValue: number = 200;
+
 	const handleAllOpacity = () => {
-		Animated.stagger(500, [
+		Animated.stagger(staggerValue, [
 			Animated.timing(firstOpacity, {
 				toValue: 1,
 				useNativeDriver: true,
@@ -24,7 +26,7 @@ const Box3: VFC = () => {
 	};
 
 	const handleBackAllOpacity = () => {
-		Animated.stagger(500, [
+		Animated.stagger(staggerValue, [
 			Animated.timing(firstOpacity, {
 				toValue: 0,
 				useNativeDriver: true,
